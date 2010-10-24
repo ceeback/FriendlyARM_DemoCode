@@ -1,21 +1,25 @@
 Chang Log:
 
+2010.10.24
+Change README to english. Chinese words can not be displayed properly in GitHub currently.
+
+
 2010.10.23
-利用Git 进行版本管理。
+Use Git to manage source code.
 
+==========================================
 
-本程序有友善之臂提供，为2440开发板的示例程序，请使用ADS编译。
+This demo code is supplied by FriendlyARM company,which is used for s3c2440 from samsung.
+You could use ADS or gcc complier to build image.
 
-简单使用说明：
-使用H-Jtag或者更高级的仿真器调试，也可以不使用仿真器，借助supervivi的Download & Run功能测试，
-下载的时候把DNW的下载地址设置为 0x30000000 即可。
+Simple tips:
 
-本程序支持如下LCD:
-- NEC3.5"真彩LCD，分辨率240x320
-- 7寸真彩LCD, 分辨率800x480
-- VGA扩展模块,分辨率1024x768@70Hz
+1. Use H-Jtag or other debugger to monitor the running process of program, the download address for image is 0x30000000
 
-若要在LCD上正常显示CMOS摄像头，只需在Option.h文件中
-改变LCD_TYPE的定义为相应的LCD即可。
+Supported LCD type:
+- NEC 3.5'' True-color LCD, 240*320.
+- 7'' True-color LCD,800*480
+- VGA extend module,1024*768@79MHz.
+ 
 
 
